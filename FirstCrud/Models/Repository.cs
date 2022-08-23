@@ -1,11 +1,8 @@
-﻿
-using FirstCrud.Models;
-
-namespace FirstCrud.Repository
+﻿namespace FirstCrud.Models
 {
     public static class Repository
     {
-        public static List<Employee> allEmployees  = new List<Employee>();
+        private static List<Employee> allEmployees = new List<Employee>();
 
         public static IEnumerable<Employee> AllEmployees
         {

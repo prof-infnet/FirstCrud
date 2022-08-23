@@ -1,5 +1,4 @@
-﻿
-using FirstCrud.Models;
+﻿using FirstCrud.Models;
 using Microsoft.AspNetCore.Mvc;
 
 
