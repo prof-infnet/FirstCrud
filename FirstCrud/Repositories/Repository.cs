@@ -1,4 +1,6 @@
-﻿namespace FirstCrud.Models
+﻿using FirstCrud.Models;
+
+namespace FirstCrud.Repositories
 {
     public static class Repository
     {
