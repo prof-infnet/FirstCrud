@@ -17,6 +17,11 @@ namespace FirstCrud.Repositories
             allEmployees.Add(employee);
         }
 
+        public static void Delete(Employee employee)
+        {
+            allEmpoyees.Remove(employee);
+        }
+
 
     }
 }
