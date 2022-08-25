@@ -1,5 +1,5 @@
 ﻿using FirstCrud.Models;
-using FirstCrud.Repositories;
+using FirstCrud.Repository;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -26,7 +26,7 @@ namespace FirstCrud.Controllers
         [HttpPost]
         public IActionResult Create(Employee employee)
         {
-            Repository.Create(employee);
+            EmployeeRepository.Create(employee);
 
             return View("Thanks", employee);
         }
