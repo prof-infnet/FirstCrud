@@ -9,7 +9,7 @@ namespace FirstCrud.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            return View(EmployeeRepository.AllEmployees);
         }
 
         // HTTP GET VERSION
@@ -17,10 +17,6 @@ namespace FirstCrud.Controllers
         {
             return View();
         }
-
-
-
-
 
         // HTTP POST VERSION
         [HttpPost]

@@ -8,7 +8,8 @@ namespace FirstCrud.Repositories
 
         public static IEnumerable<Employee> AllEmployees
         {
-            get { return allEmployees; }
+           
+            get { return allEmployees ; }
         }
 
         public static void Create(Employee employee)
