@@ -1,5 +1,5 @@
 ﻿using FirstCrud.Models;
-using FirstCrud.Repository;
+using FirstCrud.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 

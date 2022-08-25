@@ -1,6 +1,6 @@
 ﻿using FirstCrud.Models;
 
-namespace FirstCrud.Repository
+namespace FirstCrud.Repositories
 {
     public static class EmployeeRepository
     {
