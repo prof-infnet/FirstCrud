@@ -7,9 +7,15 @@ namespace FirstCrud.Controllers
 {
     public class EmployeesController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(string searchString)
         {
-            return View(EmployeeRepository.AllEmployees);
+            var employees = from m in EmployeeRepository.AllEmployees select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                employees = employees.Where(emp => emp.Name!.Contains(searchString));
+            }
+            return View( employees);
         }
 
         // HTTP GET VERSION
