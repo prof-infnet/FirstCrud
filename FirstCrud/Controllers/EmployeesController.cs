@@ -49,14 +49,17 @@ namespace FirstCrud.Controllers
             return RedirectToAction("Index");
         }
 
-        
         [HttpPost]
         public IActionResult Delete(string empname)
         {
-            Employee employee = EmployeeRepository.AllEmployees.Where(e => e.Name == empname).FirstOrDefault();
+            Employee employee = EmployeeRepository.AllEmployees
+                .Where(e => e.Name == empname).FirstOrDefault();
+            
             EmployeeRepository.Delete(employee);
             return RedirectToAction("Index");
         }
+
+
 
 
 
